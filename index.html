@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignmet</title>
+
+    <script>
+            // Odd And Even Number
+        function forEvenAndOdd(odd){
+            if(odd % 4 === 0){
+                return 'even';
+            }else{
+                return 'odd';
+            }
+            
+        }
+
+        console.log(forEvenAndOdd(5));
+        console.log(forEvenAndOdd(8));
+
+
+        // Finding the largest of Two number
+        function LargeNum(large, small){
+            return Math.max(large, small) 
+        }
+
+        console.log(LargeNum(52, 17));
+
+
+        // Switch Statement
+        function getDay(){
+            let today = new Date().getDay();
+            let day;
+
+
+            switch(today){
+                case 1: day = "Monday";
+                break;
+                case 2: day = "Tuesday";
+                break;
+                case 3: day = "Wednesday";
+                break;
+                case 4: day = "Thursday";
+                break;
+                case 5: day = "Friday";
+                break;
+                case 6: day = "Saturday";
+                break;
+                case 7: day = "Sunday";
+                break;
+            }
+
+            return day;
+        }
+
+        console.log(getDay());
+
+
+        // Grading System
+        function gradeSystem(score){
+            let grade;
+            if(score >= 70 && score <= 100){
+                grade = "Excellent";
+            }
+
+            else if(score >= 50 && score <= 69){
+                grade = "Very good";
+            }
+
+            else if(score >= 35 && score <= 49){
+                grade = "good";
+            }
+
+            else if(score >= 0 && score <= 34){
+                grade = "poor";
+            }
+            return grade;
+        }
+
+        console.log(gradeSystem(57));
+
+
+        // While Condition
+        let y = 0;
+        while(y < 10){
+            console.log(y);
+            y++;
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
